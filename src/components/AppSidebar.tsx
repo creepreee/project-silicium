@@ -2,14 +2,12 @@ import { useState } from "react";
 import { 
   Home, 
   Info, 
-  Github, 
   BookOpen, 
   Users, 
-  Settings,
   Cpu,
   Smartphone 
 } from "lucide-react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import {
   Sidebar,
@@ -33,19 +31,17 @@ const mainItems = [
 
 const resourceItems = [
   { title: "Documentation", url: "/docs", icon: BookOpen },
-  { title: "GitHub", url: "/github", icon: Github },
-  { title: "Community", url: "/community", icon: Users },
+  { title: "Contribute", url: "/contribute", icon: Users },
 ];
 
 export function AppSidebar() {
   const { state } = useSidebar();
-  const location = useLocation();
-  const currentPath = location.pathname;
-
-  const isActive = (path: string) => currentPath === path;
-  const getNavCls = ({ isActive }: { isActive: boolean }) =>
-    isActive ? "bg-primary text-primary-foreground font-medium" : "hover:bg-accent hover:text-accent-foreground text-black";
-
+const location = useLocation();
+const isActive = (path: string) => location.pathname === path;
+  const getNavLinkCls = (path: string) =>
+  isActive(path)
+    ? "bg-primary text-primary-foreground font-medium"
+    : "hover:bg-accent hover:text-accent-foreground text-muted-foreground hover:text-foreground transition-colors";
   return (
     <Sidebar
       collapsible="icon"
@@ -73,10 +69,10 @@ export function AppSidebar() {
               {mainItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink to={item.url} end className={getNavCls}>
-                      <item.icon className="h-4 w-4 text-white hover:text-black transition-colors duration-100" />
-                      <span className="group-data-[collapsible=icon]:hidden text-white">{item.title}</span>
-                    </NavLink>
+                    <Link to={item.url} className={getNavLinkCls(item.url)}>
+                      <item.icon className="h-4 w-4" />
+                      <span className="group-data-[collapsible=icon]:hidden">{item.title}</span>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -92,10 +88,10 @@ export function AppSidebar() {
               {resourceItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink to={item.url} className={getNavCls}>
-                      <item.icon className="h-4 w-4 text-white hover:text-black transition-colors duration-100" />
-                      <span className="group-data-[collapsible=icon]:hidden text-white">{item.title}</span>
-                    </NavLink>
+                    <Link to={item.url} className={getNavLinkCls(item.url)}>
+                      <item.icon className="h-4 w-4" />
+                      <span className="group-data-[collapsible=icon]:hidden">{item.title}</span>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

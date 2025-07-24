@@ -93,7 +93,7 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Host Mode", state: "not-working" },
               { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "not-working" },
-              { feature: "Mass Storage",state: "working" },
+              { feature: "Mass Storage", state: "working" },
               { feature: "Windows Boot", description: "WinPE Booted", state: "working" },
               { feature: "Linux Boot", description: "Mainline WIP", state: "not-working" },
             ],
@@ -2970,7 +2970,7 @@ const manufacturers: Manufacturer[] = [
 
 const statusConfig = {
   working: { symbol: "✅", label: "Working", color: "bg-green-500/20 text-green-400 border-green-500/30" },
-  problematic: { symbol: "⚠️", label: "Problematic", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
+  partial: { symbol: "⚠️", label: "Partial", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
   "not-working": { symbol: "❌", label: "Not Working", color: "bg-red-500/20 text-red-400 border-red-500/30" },
   unknown: { symbol: "❔", label: "Unknown", color: "bg-gray-500/20 text-gray-400 border-gray-500/30" },
   active: { symbol: "🟢", label: "Active", color: "bg-blue-500/20 text-blue-400 border-blue-500/30"},
@@ -3017,7 +3017,7 @@ export default function Devices() {
       .filter(manufacturer => manufacturer.chipsets.length > 0);
   }, [searchTerm, statusFilter, brandFilter]);
 
-  // Auto-expand fields yeah did this just for great look :)
+  // Auto-expand fields when searching
   React.useEffect(() => {
     if (searchTerm.trim()) {
       const newOpenManufacturers = new Set<string>();
@@ -3033,7 +3033,7 @@ export default function Devices() {
       setOpenManufacturers(newOpenManufacturers);
       setOpenChipsets(newOpenChipsets);
     }
-  }, [searchTerm, filteredManufacturers]);
+  }, [searchTerm]); // Removed filteredManufacturers to prevent infinite loop
 
   const toggleManufacturer = (manufacturerName: string) => {
     const newOpenManufacturers = new Set(openManufacturers);
@@ -3429,3 +3429,4 @@ export default function Devices() {
     </div>
   );
 }
+

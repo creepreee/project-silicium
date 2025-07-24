@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Devices from "./pages/Devices";
+import Contribute from "./pages/contribute";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/devices" element={<Devices />} />
-            
+            <Route path="/contribute" element={<Contribute />} />
             {/*CATCH-ALL "*" ROUTE-------- this is the default route */}
             <Route path="*" element={<NotFound />} />
           </Routes>

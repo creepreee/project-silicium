@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { TooltipTerm } from '@/components/ui/tooltip-term';
 import { 
   Github, 
   MessageCircle, 
@@ -32,7 +34,7 @@ const About = () => {
     },
     {
       icon: Smartphone,
-      title: "Windows on Android",
+      title: "Windows on Android", 
       description: "Run full Windows 10/11 ARM64 on your smartphone or tablet with native hardware support."
     },
     {
@@ -48,8 +50,8 @@ const About = () => {
   ];
 
   const stats = [
-    { number: "10+", label: "Supported Devices" },
-    { number: "239", label: "GitJub Stars" },
+    { number: "40+", label: "Supported Devices" },
+    { number: "239", label: "Github Stars" },
     { number: "103", label: "Forks" },
     { number: "50+", label: "Contributors" }
   ];
@@ -65,6 +67,16 @@ const About = () => {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
+        {/* Full Section Background Image */}
+        <div 
+          className="absolute inset-0 opacity-20 bg-no-repeat bg-cover"
+          style={{
+            backgroundImage: 'url(./silicon.png)',
+            filter: 'blur(0.8px)',
+            backgroundPosition: 'center 20%',
+          }}
+        ></div>
+
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             {/* Badge */}
@@ -73,21 +85,21 @@ const About = () => {
               Open Source UEFI Project
             </Badge>
 
-            {/* Title */}
+            {/* Title Text */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Project
-              <span className="bg-gradient-primary bg-clip-text text-transparent animate-glow block md:inline md:ml-4">
+              Project{' '}
+              <span className="text-gradient-primary animate-glow">
                 Silicium
               </span>
             </h1>
 
             {/* Tagline */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              "Bringing UEFI to Android and Beyond"
+              "Bringing <TooltipTerm term="UEFI">UEFI</TooltipTerm> to Android and Beyond"
             </p>
 
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Unlock the full potential of your mobile device with desktop-class firmware
+              Unlock the full potential of your mobile device with desktop-class <TooltipTerm term="firmware">firmware</TooltipTerm>
             </p>
 
             {/* CTA Buttons */}
@@ -140,7 +152,7 @@ const About = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 About 
-                <span className="bg-gradient-primary bg-clip-text text-transparent"> Project Silicium</span>
+                <span className="text-gradient-primary"> Project Silicium</span>
               </h2>
             </div>
 
@@ -148,10 +160,10 @@ const About = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="prose prose-lg prose-invert max-w-none">
                   <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                    Project Silicium is a bold, community-driven open-source initiative that focuses on porting UEFI (Unified Extensible Firmware Interface) to Android-based smartphones and tablets. UEFI has long been a foundational standard in the world of PCs and servers, allowing powerful features such as secure booting, operating system flexibility, and deeper hardware-level control. Silicium brings this same level of control and flexibility to mobile devices, allowing users to go far beyond the limitations imposed by traditional Android bootloaders.
+                    Project Silicium is a bold, community-driven open-source initiative that focuses on porting <TooltipTerm term="UEFI">UEFI (Unified Extensible Firmware Interface)</TooltipTerm> to Android-based smartphones and tablets. <TooltipTerm term="UEFI">UEFI</TooltipTerm> has long been a foundational standard in the world of PCs and servers, allowing powerful features such as <TooltipTerm term="secure boot">secure booting</TooltipTerm>, operating system flexibility, and deeper hardware-level control. Silicium brings this same level of control and flexibility to mobile devices, allowing users to go far beyond the limitations imposed by traditional Android <TooltipTerm term="bootloader">bootloaders</TooltipTerm>.
                   </p>
                   <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                    The core mission of Silicium is to unlock the full potential of modern ARM-based devices. By enabling them to boot alternative operating systems like Windows, various Linux distributions, and even custom OSes, Project Silicium opens the door to an entirely new realm of mobile computing. Imagine turning your everyday smartphone into a full-fledged desktop environment, development machine, or dual-boot device — all while maintaining performance and functionality. This is no longer a concept of the future, but a reality being built today.
+                    The core mission of Silicium is to unlock the full potential of modern <TooltipTerm term="ARM">ARM-based</TooltipTerm> devices. By enabling them to boot alternative operating systems like <TooltipTerm term="Windows ARM64">Windows</TooltipTerm>, various Linux distributions, and even custom OSes, Project Silicium opens the door to an entirely new realm of mobile computing. Imagine turning your everyday smartphone into a full-fledged desktop environment, development machine, or dual-boot device — all while maintaining performance and functionality. This is no longer a concept of the future, but a reality being built today.
                   </p>
                   <p className="text-lg leading-relaxed text-muted-foreground">
                     What truly sets Project Silicium apart is its dedicated global community of developers, contributors, and enthusiasts. Together, they are continuously working to reverse-engineer, document, and develop critical low-level firmware components. This level of collaboration has made it possible to support a growing list of devices, with detailed guides, source code, and support channels open to all. Silicium isn’t just about booting a new OS — it’s about freedom, experimentation, and giving control back to the user.
@@ -169,7 +181,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Key 
-              <span className="bg-gradient-primary bg-clip-text text-transparent"> Features</span>
+              <span className="text-gradient-primary"> Features</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover what makes Project Silicium revolutionary
@@ -204,7 +216,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Supported 
-              <span className="bg-gradient-primary bg-clip-text text-transparent"> Devices</span>
+              <span className="text-gradient-primary"> Devices</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Check compatibility for your device and see what's working
@@ -220,15 +232,12 @@ const About = () => {
                   Explore our comprehensive device compatibility database with detailed 
                   status information for UEFI and Windows features.
                 </p>
-                <Button 
-                  variant="hero" 
-                  size="lg"
-                  onClick={() => window.location.href = '/devices'}
-                  className="group"
-                >
-                  View All Devices
-                  <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+              <Link to="/devices">
+  <Button variant="hero" size="lg" className="group">
+    View All Devices
+    <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+  </Button>
+</Link>
               </CardContent>
             </Card>
           </div>
@@ -241,7 +250,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Join Our 
-              <span className="bg-gradient-primary bg-clip-text text-transparent"> Community</span>
+              <span className="text-gradient-primary"> Community</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Help us bring UEFI to more devices and expand the possibilities of mobile computing
@@ -298,3 +307,4 @@ const About = () => {
 };
 
 export default About;
+
