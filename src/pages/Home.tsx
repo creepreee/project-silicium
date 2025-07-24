@@ -25,7 +25,7 @@ const Home = () => {
 	<section className="py-20 px-6 space-y-24">
   {/* Section 1 */}
   <div className="flex flex-col md:flex-row items-center md:space-x-10">
-   <img src="/windows.png" className="w-[400px] h-[400px] rounded-lg shadow-lg" />
+   <img src="./windows.png" className="w-[400px] h-[400px] rounded-lg shadow-lg" />
     <div className="mt-6 md:mt-0">
       <h2 className="text-3xl font-bold mb-4 text-gray-900">
   	Windows On ARM
@@ -37,7 +37,7 @@ const Home = () => {
 
   {/* Section 2 */}
   <div className="flex flex-col md:flex-row-reverse items-center md:space-x-reverse md:space-x-10">
-    <img src="/UEFI.png" className="w-[400px] h-[400px] rounded-lg shadow-lg" />
+    <img src="./UEFI.png" className="w-[400px] h-[400px] rounded-lg shadow-lg" />
     <div className="mt-6 md:mt-0">
       <h2 className="text-3xl font-bold mb-4 text-gray-900">
   	True UEFI Experience for Mobile Devices
@@ -49,7 +49,7 @@ const Home = () => {
   </div>
  {/* Section 3 */}
   <div className="flex flex-col md:flex-row items-center md:space-x-10">
-   <img src="/phones2.jpg" className="w-[600px] h-[400px] rounded-lg shadow-lg" />
+   <img src="./phones2.jpg" className="w-[600px] h-[400px] rounded-lg shadow-lg" />
     <div className="mt-6 md:mt-0">
       <h2 className="text-3xl font-bold mb-4 text-gray-900">
   	Is Your Device Supported?
@@ -67,7 +67,7 @@ const Home = () => {
    {/* Section 4 */}
   <div className="flex flex-col items-center text-center mt-10">
   <img
-    src="/support.png"
+    src="./support.png"
     className="w-[200px] h-[200px] rounded-lg shadow-lg"
     alt="Support Illustration"
   />
@@ -85,17 +85,17 @@ const Home = () => {
   <div className="flex justify-around items-center w-full max-w-screen-xl mx-auto">
     {/* Telegram */}
     <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" className="px-4">
-      <img src="/telegram.png" alt="Discord" className="w-16 h-16 rounded-full" />
+      <img src="./telegram.png" alt="Telegram" className="w-16 h-16 rounded-full" />
     </a>
 
     {/* Discord */}
     <a href="https://discord.com/invite/Dx2QgMx7Sv" target="_blank" rel="noopener noreferrer" className="px-4">
-      <img src="/Discord.png" alt="Discord" className="w-16 h-16 rounded-full" />
+      <img src="./Discord.png" alt="Discord" className="w-16 h-16 rounded-full" />
     </a>
 
     {/* GitHub */}
     <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer" className="px-4">
-      <img src="/github.png" alt="Discord" className="w-16 h-16 rounded-full" />
+      <img src="./github.png" alt="GitHub" className="w-16 h-16 rounded-full" />
     </a>
   </div>
 </div>

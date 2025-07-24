@@ -372,7 +372,7 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "working" },
               ],
           },
-          { name: "Samsung Galaxy Z Flip 4", brand: "Samsung", status: "problematic",
+          { name: "Samsung Galaxy Z Flip 4", brand: "Samsung", status: "partial",
           maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
@@ -474,7 +474,7 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "working" },
               ],
           },
-          { name: "Samsung Galaxy Z Fold 3 5G", brand: "Samsung", status: "problematic",
+          { name: "Samsung Galaxy Z Fold 3 5G", brand: "Samsung", status: "partial",
           maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
@@ -714,7 +714,7 @@ const manufacturers: Manufacturer[] = [
       {
         name: "Snapdragon 865/865+/870 Devices",
         devices: [
-          { name: "Galaxy S10", brand: "Samsung", status: "problematic", 
+          { name: "Galaxy S10", brand: "Samsung", status: "partial", 
           maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
@@ -2899,7 +2899,7 @@ const manufacturers: Manufacturer[] = [
         name: "Exynos 2400",
         devices: [
           { name: "Galaxy S24", brand: "Samsung", status: "working" },
-          { name: "Galaxy S24+", brand: "Samsung", status: "problematic" },
+          { name: "Galaxy S24+", brand: "Samsung", status: "partial" },
         ],
       },
       {
@@ -2912,7 +2912,7 @@ const manufacturers: Manufacturer[] = [
       {
         name: "Exynos 2100",
         devices: [
-          { name: "Galaxy S21", brand: "Samsung", status: "problematic" },
+          { name: "Galaxy S21", brand: "Samsung", status: "partial" },
           { name: "Galaxy Note 20", brand: "Samsung", status: "not-working" },
         ],
       },
@@ -2940,7 +2940,7 @@ const manufacturers: Manufacturer[] = [
         name: "Tegra X1",
         devices: [
           { name: "Shield TV", brand: "NVIDIA", status: "working" },
-          { name: "Pixel C", brand: "Google", status: "problematic" },
+          { name: "Pixel C", brand: "Google", status: "partial" },
         ],
       },
       {
