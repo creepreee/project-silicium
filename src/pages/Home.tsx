@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const Home = () => {
   return <div className="min-h-full">
       {/* Top section with default background */}
@@ -54,7 +55,13 @@ const Home = () => {
   	Is Your Device Supported?
      </h2>
       <p className="text-lg text-gray-700 max-w-xl mx-auto text-center">
-Curious whether your phone or tablet works with our UEFI builds? Check the <a href="/status" className="text-blue-600 hover:underline">Status</a> page for up-to-date compatibility info and status of your device</p>
+  Curious whether your phone or tablet works with our UEFI builds? Check the{' '}
+  <Link to="/devices" className="text-blue-600 hover:underline">
+    Devices Status
+  </Link>{' '}
+  page for up-to-date compatibility info and status of your device.
+</p>
+
     </div>
   </div>
    {/* Section 4 */}

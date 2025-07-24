@@ -22,6 +22,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/devices" element={<Devices />} />
+            
             {/*CATCH-ALL "*" ROUTE-------- this is the default route */}
             <Route path="*" element={<NotFound />} />
           </Routes>

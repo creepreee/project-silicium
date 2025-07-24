@@ -62,7 +62,7 @@ const ProjectHero = () => {
                 <div className="text-sm text-muted-foreground">Forks</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-2xl font-bold text-primary"20+</div>
                 <div className="text-sm text-muted-foreground">Supported Devices</div>
               </div>
             </div>

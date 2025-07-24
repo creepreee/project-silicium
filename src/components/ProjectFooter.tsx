@@ -107,16 +107,6 @@ const ProjectFooter = () => {
               </li>
               <li>
                 <a 
-                  href="https://github.com/Project-Silicium/Mu-Silicium/wiki" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Wiki
-                </a>
-              </li>
-              <li>
-                <a 
                   href="https://github.com/Project-Silicium" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   target="_blank"
@@ -133,6 +123,19 @@ const ProjectFooter = () => {
           <p>
             © {new Date().getFullYear()} Project Silicium. Open source project licensed under various licenses. 
             See individual repositories for details.
+          </p>
+        </div>
+        <div className=" text-center text-sm text-muted-foreground">
+          <p>
+             Made by{" "}
+  <a
+    href="https://github.com/creepreee"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-500 hover:underline"
+  >
+    @Creepreee
+  </a>
           </p>
         </div>
       </div>
