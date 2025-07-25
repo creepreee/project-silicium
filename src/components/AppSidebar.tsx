@@ -30,7 +30,7 @@ const mainItems = [
 ];
 
 const resourceItems = [
-  { title: "Documentation", url: "/docs", icon: BookOpen },
+  { title: "Guides", url: "/guides", icon: BookOpen },
   { title: "Contribute", url: "/contribute", icon: Users },
 ];
 

@@ -74,6 +74,7 @@ const manufacturers: Manufacturer[] = [
         ],
       },
       
+      //------------------------------------------------------------------------new soc
       
       {
         name: "Snapdragon 8s Gen 3",
@@ -128,7 +129,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "not-working" },
               ],
            },
-          { name: "Xiaomi Poco F6", brand: "Xiaomi",
+//------------------------------------------------------------------------
+          { 
+          name: "Xiaomi Poco F6", brand: "Xiaomi",
           codename: "peridot",
             maintainer: "PugzAreCute",
             status: "active",
@@ -178,7 +181,9 @@ const manufacturers: Manufacturer[] = [
               ],
           },
       ],
-     },
+    },
+    
+      //------------------------------------------------------------------------new soc
       
       {
         name: "Snapdragon 8 Gen 2",
@@ -227,7 +232,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "not-working" },
               ],
           },
-          { name: "ZTE Nubia RedMagic 8 Pro", brand: "ZTE", status: "active",
+          //------------------------------------------------------------------------
+          { 
+          name: "ZTE Nubia RedMagic 8 Pro", brand: "ZTE", status: "active",
           maintainer: "Nikka",
           codename: "nx729j",
             contributors: ["Robotix, Nikka"],
@@ -275,10 +282,12 @@ const manufacturers: Manufacturer[] = [
           },
         ],
       },
+      //------------------------------------------------------------------------
       {
         name: "Snapdragon 8 Gen 1/8+ Gen 1 Devices",
         devices: [
-          { name: "Samsung Galaxy Tab S8+ 5G", brand: "Samsung", status: "active",
+          { 
+          name: "Samsung Galaxy Tab S8+ 5G", brand: "Samsung", status: "active",
           codename: "gts8p",
           maintainer: "Robotix",
             contributors: ["Robotix"],
@@ -328,7 +337,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "S-pen", state: "not-working" },
               ],
           },
-          { name: "Samsung Galaxy Tab S8 5G", brand: "Samsung", status: "inactive",
+          //------------------------------------------------------------------------
+          { 
+          name: "Samsung Galaxy Tab S8 5G", brand: "Samsung", status: "inactive",
           maintainer: "None",
           codename: "gts8",
             contributors: ["Robotix"],
@@ -378,7 +389,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "S-pen", state: "not-working" },
               ],
           },
-          { name: "Samsung Galaxy Z Flip 4", brand: "Samsung", status: "active",
+          //------------------------------------------------------------------------
+          { 
+          name: "Samsung Galaxy Z Flip 4", brand: "Samsung", status: "active",
           codename: "b4q",
           maintainer: "Robotix",
             contributors: ["Robotix"],
@@ -425,10 +438,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "partial" },
               { feature: "Vibration", state: "not-working" },
-          
               ],
           },
-          { name: "Xiaomi 12 Pro", brand: "Xiaomi", status: "inactive",
+          //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi 12 Pro", brand: "Xiaomi", status: "inactive",
 	codename: "zeus",
           maintainer: "None",
             contributors: ["Robotix, 2petro"],
@@ -445,8 +459,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Windows Boot", state: "not-working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
-            },
-          { name: "Xiaomi Poco F4 GT", brand: "Xiaomi", status: "inactive",
+         },
+         //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi Poco F4 GT", brand: "Xiaomi", status: "inactive",
 	codename: "ingres",
           maintainer: "Nikka",
             contributors: ["Robotix, Nikka"],
@@ -493,17 +509,17 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
-          
               ],
             },
-          { name: "Nothing Phone (2)", brand: "Nothing", status: "active",
+            //------------------------------------------------------------------------
+          { 
+          name: "Nothing Phone (2)", brand: "Nothing", status: "active",
 	codename: "pong",
           maintainer: "index986",
             contributors: ["Robotix, N1kroks, index986"],
             testers: ["index986, People from tg/discord nothing group"],
             uefiFeatures: [
               { feature: "Display", state: "working" },
-             // { feature: "Cover Display", description: "No actual Driver to Handle it & Wrong Orientation", state: "partial" },
               { feature: "Internal Storage", state: "working" },
               { feature: "Side Buttons", state: "working" },
               { feature: "USB Host Mode", state: "not-working" },
@@ -514,7 +530,7 @@ const manufacturers: Manufacturer[] = [
               { feature: "Linux Boot", state: "working" },
             ],
              windowsFeatures: [
-            { feature: "Internal Storage", state: "working" },
+              { feature: "Internal Storage", state: "working" },
               { feature: "SD Card", state: "not-working" },
               { feature: "Side Buttons", state: "not-working" },
               { feature: "Proximity Sensor", state: "not-working" },
@@ -523,7 +539,6 @@ const manufacturers: Manufacturer[] = [
               { feature: "Compass Sensor", state: "not-working" },
               { feature: "Gyroscope Sensor", state: "not-working" },
               { feature: "Fingerprint Sensor", state: "not-working" },
-              //{ feature: "Hall Sensor", state: "working" },
               { feature: "NFC Sensor", state: "not-working" },
               { feature: "Temperature Sensor", state: "not-working" },
               { feature: "Battery", state: "not-working" },
@@ -543,15 +558,18 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
-          
               ],
             },
         ],
       },
+      
+      //------------------------------------------------------------------------new soc
+      
       {
         name: "Snapdragon 888/888+ Devices",
         devices: [
-          { name: "Samsung Galaxy S21 FE", brand: "Samsung", status: "inactive",
+          { 
+          name: "Samsung Galaxy S21 FE", brand: "Samsung", status: "inactive",
           codename: "r9qb2",
           maintainer: "None",
             contributors: ["Robotix,Nikroks, Icesito68"],
@@ -564,13 +582,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "not-working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", description: "Needs Device Mode", state: "not-working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", description:"Needs Special Setup", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "not-working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -599,7 +615,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "not-working" },
               ],
           },
-          { name: "Samsung Galaxy Z Fold 3 5G", brand: "Samsung", status: "inactive",
+          //------------------------------------------------------------------------
+          { 
+          name: "Samsung Galaxy Z Fold 3 5G", brand: "Samsung", status: "inactive",
           codename:"q2q",
           maintainer: "Azkali",
             contributors: ["Robotix, Azkali"],
@@ -612,13 +630,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", state: "unknown" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "not-working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -647,7 +663,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "not-working" },
               ],
           },
-          { name: "Oneplus 9", brand: "Oneplus", status: "active", 
+          //------------------------------------------------------------------------
+          { 
+          name: "Oneplus 9", brand: "Oneplus", status: "active", 
           maintainer: "arminask",
             contributors: ["Robotix"],
             testers: ["None"],
@@ -659,13 +677,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -694,7 +710,9 @@ const manufacturers: Manufacturer[] = [
               { feature: "Vibration", state: "not-working" },
               ],
           },
-          { name: "Asus ROG Phone 5", brand: "Asus", status: "inactive", 
+          //------------------------------------------------------------------------
+          { 
+          name: "Asus ROG Phone 5", brand: "Asus", status: "inactive", 
           codename: "i005d",
           maintainer: "None",
             contributors: ["Robotix, alfaonyt"],
@@ -707,12 +725,13 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "not-working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", state: "not-working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "not-working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
           },
-          { name: "Xiaomi Mi 11", brand: "Xiaomi", status: "inactive", 
+          //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi Mi 11", brand: "Xiaomi", status: "inactive", 
           maintainer: "Daniel224455",
             contributors: ["Robotix, Daniel224455"],
             testers: ["Daniel224455"],
@@ -724,13 +743,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "not-working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", description: "Needs Device Mode", state: "not-working" },
-          //    { feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -757,9 +774,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
-              ],
+           ],
           },
-          { name: "Xiaomi 11T Pro", brand: "Xiaomi", status: "active",
+          //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi 11T Pro", brand: "Xiaomi", status: "active",
           codename: "vili",
           maintainer: "Robotix",
             contributors: ["Robotix"],
@@ -772,13 +791,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
-            windowsFeatures: [
-             { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
+              windowsFeatures: [
+              { feature: "Internal Storage", state: "working" },
               { feature: "Side Buttons", state: "working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -809,7 +826,13 @@ const manufacturers: Manufacturer[] = [
           },
         ],
       },
-          { name: "OnePlus 8T", brand: "OnePlus", status: "inactive", maintainer: "Maintainer",
+      
+      //------------------------------------------------------------------------new soc
+    {  
+      name: "Snapdragon 865/865+/870 Devices",
+        devices: [
+          { 
+          name: "OnePlus 8T", brand: "OnePlus", status: "inactive", maintainer: "Maintainer",
           codename: "kebab",
             contributors: ["Robotix, SwedMlite"],
             testers: ["None"],
@@ -827,7 +850,6 @@ const manufacturers: Manufacturer[] = [
             ],
             windowsFeatures: [
              { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "not-working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -855,8 +877,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
               ],
-              },
-          { name: "Lenovo Legion Tab Y700", brand: "Lenovo", status: "inactive", maintainer: "None",
+            },
+            //------------------------------------------------------------------------
+          { 
+          name: "Lenovo Legion Tab Y700", brand: "Lenovo", status: "inactive", maintainer: "None",
           codename: "9707f",
             contributors: ["hyusang"],
             testers: ["None"],
@@ -874,7 +898,6 @@ const manufacturers: Manufacturer[] = [
             ],
            windowsFeatures: [
              { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "not-working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
@@ -901,8 +924,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
-              ],},
-          { name: "Realme GT NEO 2", brand: "Realme", status: "inactive", maintainer: "kubawis128",
+              ],
+            },
+            //------------------------------------------------------------------------
+          { 
+          name: "Realme GT NEO 2", brand: "Realme", status: "inactive", maintainer: "kubawis128",
             contributors: ["Robotix, kubawis128"],
             testers: ["kubawis128"],
             uefiFeatures: [
@@ -913,20 +939,17 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "not-working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", description: "Needs Device Mode", state: "not-working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "working" },
             ],
              windowsFeatures: [
              { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "not-working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
               { feature: "Accelerometer Sensor", state: "not-working" },
               { feature: "Compass Sensor", state: "not-working" },
               { feature: "Fingerprint Sensor", state: "not-working" },
-              //{ feature: "Hall Sensor", state: "not-working" },
               { feature: "NFC Sensor", state: "not-working" },
               { feature: "Temperature Sensor", state: "not-working" },
               { feature: "Battery", state: "not-working" },
@@ -946,8 +969,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
-              ],},
-          { name: "Xiaomi Pad 6", brand: "Xiaomi", status: "inactive", maintainer: "None",
+              ],
+            },
+            //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi Pad 6", brand: "Xiaomi", status: "inactive", maintainer: "None",
           codename: "pipa",
             contributors: ["Statzar, N1kroks, Robotix, 6adp"],
             testers: ["None"],
@@ -959,21 +985,16 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "working" },
               { feature: "Mass Storage", description: "Unknown issues", state: "not-working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "not-working" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "working" },
-             // { feature: "Proximity Sensor", state: "working" },
               { feature: "Light Sensor", state: "not-working" },
               { feature: "Accelerometer Sensor", state: "not-working" },
               { feature: "Compass Sensor", state: "not-working" },
-              //{ feature: "Fingerprint Sensor", state: "not-working" },
               { feature: "Hall Sensor", state: "working" },
-              //{ feature: "NFC Sensor", state: "not-working" },
               { feature: "Temperature Sensor", state: "working" },
               { feature: "Battery", state: "working" },
               { feature: "USB Host Mode", state: "not-working" },
@@ -991,9 +1012,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "Camera", state: "not-working" },
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
-              //{ feature: "Vibration", state: "not-working" },
-              ],},
-          { name: "Xiaomi Poco F3 / Redmi K40 / Mi 11X", brand: "Xiaomi", status: "active", maintainer: "N1kroks",
+              ],
+            },
+            //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi Poco F3 / Redmi K40 / Mi 11X", brand: "Xiaomi", status: "active", maintainer: "N1kroks",
           codename: "alioth",
             contributors: ["Robotix, SwedMlite, hyusang, AdrianoA3, N1kroks"],
             testers: ["N1kroks"],
@@ -1005,22 +1028,18 @@ const manufacturers: Manufacturer[] = [
               { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "not-working" },
               { feature: "Mass Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Windows Boot", state: "working" },
               { feature: "Linux Boot", state: "working" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", state: "working" },
-              //{ feature: "SD Card", state: "working" },
               { feature: "Side Buttons", state: "working" },
               { feature: "Proximity Sensor", state: "not-working" },
               { feature: "Light Sensor", state: "not-working" },
               { feature: "Accelerometer Sensor", state: "not-working" },
               { feature: "Compass Sensor", state: "not-working" },
               { feature: "Fingerprint Sensor", state: "not-working" },
-              //{ feature: "Hall Sensor", state: "working" },
               { feature: "NFC Sensor", state: "not-working" },
-              //{ feature: "Temperature Sensor", state: "working" },
               { feature: "Battery", state: "not-working" },
               { feature: "USB Host Mode", state: "not-working" },
               { feature: "USB Device Mode", state: "working" },
@@ -1038,58 +1057,62 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "not-working" },
-              ],},
+              ],
+           },
         ],
       },
+      
+      //----------------------------------------------------------------------------------------------new soc
+      
+      
       {
         name: "Snapdragon 855/855+/860 Devices",
         devices: [
-          { name: "LG G8s", brand: "LG", status: "inactive", maintainer: "Daniel224455, n00b69",
-            contributors: ["Robotix", "arminask", "People from Group"],
-            testers: ["arminask"],
+          { 
+            name: "LG G8s", brand: "LG", status: "inactive", maintainer: "Daniel224455, n00b69",
+            contributors: ["Daniel224455, n00b69, Icesito68"],
+            testers: ["n00b69"],
             uefiFeatures: [
               { feature: "Display", state: "working" },
               { feature: "Internal Storage", state: "working" },
               { feature: "Side Buttons", state: "working" },
-              { feature: "USB Host Mode", state: "working" },
-              { feature: "USB Device Mode", state: "not-working" },
+              { feature: "USB Host Mode", state: "not-working" },
+              { feature: "USB Device Mode", state: "working" },
               { feature: "USB Power Delivery", state: "not-working" },
-              { feature: "Mass Storage", description: "Needs Device Mode", state: "not-working" },
-              { feature: "SD Card", state: "working" },
+              { feature: "Mass Storage",  state: "not-working" },
+              { feature: "SD Card", description: "Broken",state: "not-working" },
               { feature: "Windows Boot", state: "working" },
-              { feature: "Linux Boot", state: "not-working" },
+              { feature: "Linux Boot", description:"Untested",state: "unknown" },
             ],
             windowsFeatures: [
               { feature: "Internal Storage", state: "working" },
-              { feature: "SD Card", state: "working" },
+              { feature: "SD Card", state: "not-working" },
               { feature: "Side Buttons", state: "working" },
-              { feature: "Proximity Sensor", state: "working" },
-              { feature: "Light Sensor", state: "working" },
-              { feature: "Accelerometer Sensor", state: "working" },
-              { feature: "Compass Sensor", state: "working" },
+              { feature: "Proximity Sensor", description:"Partially works, Disabled for now.", state: "partial" },
+              { feature: "Gyroscope Sensor", description:"Partially works, Disabled for now.", state: "partial" },
+              { feature: "Accelerometer Sensor",description:"Partially works, Disabled for now.",  state: "partial" },
+              { feature: "Compass Sensor",description:"Partially works, Disabled for now.",  state: "partial" },
               { feature: "Fingerprint Sensor", state: "not-working" },
-              { feature: "Hall Sensor", state: "working" },
               { feature: "NFC Sensor", state: "not-working" },
-              { feature: "Temperature Sensor", state: "working" },
+              { feature: "Temperature Sensor", state: "unknown" },
               { feature: "Battery", state: "working" },
-              { feature: "USB Host Mode", state: "working" },
-              { feature: "USB Device Mode", state: "working" },
-              { feature: "USB Power Delivery", state: "not-working" },
-              { feature: "Charging", state: "working" },
+              { feature: "USB", state: "working" },
+              { feature: "Charging",description:"USB Charging is slow, Wireless Charging is somewhat Fast.", state: "working" },
               { feature: "WLAN", state: "working" },
               { feature: "CPU", state: "working" },
               { feature: "Touchscreen", state: "working" },
               { feature: "Bluetooth", state: "working" },
               { feature: "GPS", state: "working" },
               { feature: "Speakers", state: "not-working" },
+              { feature: "3.5mm Audio Jack", state: "working" },
               { feature: "Microphone", state: "not-working" },
-              { feature: "GPU", state: "not-working" },
+              { feature: "GPU", state: "working" },
               { feature: "Camera", state: "not-working" },
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
-              { feature: "Vibration", state: "working" },
-              ],
-              },
+              { feature: "Vibration", state: "not-working" },
+            ],
+          },
           { name: "OnePlus 7T Pro", brand: "Oneplus", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
@@ -1224,8 +1247,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Xiaomi Poco X3 Pro", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Xiaomi Poco X3 Pro", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -1269,7 +1294,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+            },
         ],
       },
       {
@@ -1594,7 +1620,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+            },
         ],
       },
       {
@@ -1969,7 +1996,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+            },
           { name: "LG G8s", brand: "LG", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
@@ -2014,7 +2042,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+            },
           { name: "OnePlus 7T Pro", brand: "Oneplus", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
@@ -2295,7 +2324,8 @@ const manufacturers: Manufacturer[] = [
        {
         name: "Snapdragon 680/685 Devices",
         devices: [
-          { name: "Xiaomi Redmi 10C", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+          { 
+            name: "Xiaomi Redmi 10C", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2435,7 +2465,8 @@ const manufacturers: Manufacturer[] = [
        {
         name: "Snapdragon 665 Devices",
         devices: [
-          { name: "Xiaomi Mi A3", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+          { 
+            name: "Xiaomi Mi A3", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2479,8 +2510,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Xiaomi Redmi Note 8", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Xiaomi Redmi Note 8", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2524,8 +2557,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Xiaomi Redmi Note 8T", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Xiaomi Redmi Note 8T", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2569,7 +2604,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+            },
         ],
       },
        {
@@ -2619,8 +2655,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Motorola Moto G9 Power", brand: "Motorola", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Motorola Moto G9 Power", brand: "Motorola", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2664,8 +2702,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Samsung Galaxy Tab A7 LTE (T507)", brand: "Samsung", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Samsung Galaxy Tab A7 LTE (T507)", brand: "Samsung", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2709,8 +2749,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Xiaomi Redmi 9T", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Xiaomi Redmi 9T", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2754,8 +2796,10 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Xiaomi Poco M3", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+              ],
+            },
+          { 
+            name: "Xiaomi Poco M3", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2799,7 +2843,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+            },
         ],
       },
       {
@@ -2894,8 +2939,11 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
-          { name: "Xiaomi Redmi Note 7", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
+              ],
+            },
+            //------------------------------------------------------------------------
+          { 
+          name: "Xiaomi Redmi Note 7", brand: "Xiaomi", status: "unknown", maintainer: "arminask",
             contributors: ["Robotix", "arminask", "People from Group"],
             testers: ["arminask"],
             uefiFeatures: [
@@ -2939,7 +2987,8 @@ const manufacturers: Manufacturer[] = [
               { feature: "Mobile Data", state: "not-working" },
               { feature: "Display", state: "working" },
               { feature: "Vibration", state: "working" },
-              ],},
+              ],
+           },
         ],
       },
     ],
