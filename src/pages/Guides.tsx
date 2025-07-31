@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -201,12 +202,12 @@ export default function Guides() {
                                 <div className="flex items-center gap-3">
                                   <FileText className="h-4 w-4 text-muted-foreground" />
                                   {subsection.link ? (
-                                    <a 
-                                      href={`#${subsection.link}`}
+                                    <Link 
+                                      to={subsection.link}
                                       className="font-medium text-primary hover:underline"
                                     >
                                       {subsection.name}
-                                    </a>
+                                    </Link>
                                   ) : (
                                     <span className="font-medium">{subsection.name}</span>
                                   )}

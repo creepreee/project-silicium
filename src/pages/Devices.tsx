@@ -1114,7 +1114,7 @@ const manufacturers: Manufacturer[] = [
             ],
           },
           { name: "OnePlus 7T Pro", brand: "Oneplus", status: "inactive", maintainer: "None",
-          Codename: "hotdog",
+          codename: "hotdog",
             contributors: ["None"],
             testers: ["None"],
             uefiFeatures: [
