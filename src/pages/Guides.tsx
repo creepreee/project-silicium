@@ -72,7 +72,7 @@ const guidesSections = [
     description: "This Section Contains Guides like How to Port a Device and/or SoC.",
     status: "available",
     subsections: [
-      { name: "How to Port a Device", status: "available" },
+      { name: "How to port a Snapdragon device", status: "available", link: "/guides/snapdragon-porting" },
       { name: "How to Port a SoC", status: "available" },
       { name: "Development Setup", status: "available" }
     ]
@@ -200,7 +200,16 @@ export default function Guides() {
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-3">
                                   <FileText className="h-4 w-4 text-muted-foreground" />
-                                  <span className="font-medium">{subsection.name}</span>
+                                  {subsection.link ? (
+                                    <a 
+                                      href={`#${subsection.link}`}
+                                      className="font-medium text-primary hover:underline"
+                                    >
+                                      {subsection.name}
+                                    </a>
+                                  ) : (
+                                    <span className="font-medium">{subsection.name}</span>
+                                  )}
                                 </div>
                                 <div className="flex items-center gap-2">
                                   <Badge 
