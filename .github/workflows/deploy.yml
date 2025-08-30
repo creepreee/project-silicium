@@ -1,9 +1,13 @@
-name: Build and Deploy to gh-pages
+name: Build and Deploy to gh-pages (use package.json deploy)
 
 on:
   push:
     branches:
       - main
+      
+permissions:
+  contents: write
+  pages: write
 
 jobs:
   build-and-deploy:
@@ -12,6 +16,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+        
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -19,7 +28,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build project
         run: npm run build
@@ -29,8 +38,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      - name: Deploy project
+      - name: Deploy (use package.json deploy)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
-        
